@@ -5,7 +5,7 @@ Version:	20100418
 Release:	1
 License:	GPL v2+
 Group:		Applications/System
-Source0:	http://www.draisberghof.de/usb_modeswitch-data/%{name}-%{version}.tar.bz2
+Source0:	http://www.draisberghof.de/usb_modeswitch/%{name}-%{version}.tar.bz2
 # Source0-md5:	659c9633513fa2f84465244a50c351b3
 URL:		http://www.draisberghof.de/usb_modeswitch/
 Requires:	udev

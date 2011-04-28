@@ -1,17 +1,17 @@
 Summary:	USB Modeswitch gets 4G cards in operational mode
 Summary(de.UTF-8):	USB Modeswitch aktiviert UMTS-Karten
 Name:		usb-modeswitch-data
-Version:	20101202
+Version:	20110227
 Release:	1
 License:	GPL v2+
 Group:		Applications/System
 Source0:	http://www.draisberghof.de/usb_modeswitch/%{name}-%{version}.tar.bz2
-# Source0-md5:	1263188609812752c68c2d6cfe2faf45
+# Source0-md5:	2f5e5bfa21a97b705a22f95bec367793
 URL:		http://www.draisberghof.de/usb_modeswitch/
 # NOTE: tcl is used in udev code 
-Requires:	tcl
+Requires:	tcl >= 8.4
 Requires:	udev
-Requires:	usb-modeswitch >= 1.1.4
+Requires:	usb-modeswitch >= 1.1.7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -62,5 +62,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog COPYING README
-%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/usb_modeswitch.d/*
+%{_datadir}/usb_modeswitch
 /lib/udev/rules.d/40-usb_modeswitch.rules

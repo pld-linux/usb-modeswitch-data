@@ -2,16 +2,16 @@ Summary:	Data for USB Modeswitch tool which gets 4G cards in operational mode
 Summary(de.UTF-8):	USB Modeswitch aktiviert UMTS-Karten
 Summary(pl.UTF-8):	Dane dla narzędzia USB Modeswitch przełączającego karty 4G w tryb operacyjny
 Name:		usb-modeswitch-data
-Version:	20150115
+Version:	20150627
 Release:	1
 License:	GPL v2+
 Group:		Applications/System
 Source0:	http://www.draisberghof.de/usb_modeswitch/%{name}-%{version}.tar.bz2
-# Source0-md5:	662bcd56a97e560ea974bc710822de51
+# Source0-md5:	d6bfc2cb5348f068762e66b313d9b72f
 URL:		http://www.draisberghof.de/usb_modeswitch/
 # NOTE: tcl is used in udev code 
 Requires:	tcl >= 8.4
-Requires:	usb-modeswitch >= 2.2.1
+Requires:	usb-modeswitch >= 2.2.2
 Suggests:	udev-core
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
